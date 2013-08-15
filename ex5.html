@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<title>HTML Default AngularJS</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+	<script src="loopController.js"></script>	
+</head>
+<body ng-controller="loopController">
+	<input type="text" name="car" ng-model="carname">
+	<button ng-click="addCar()">add</button>
+
+	<ul>
+		<li ng-repeat="car in cars">{{car}}</li>
+	</ul>
+</body>
+</html>
