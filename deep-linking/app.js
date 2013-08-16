@@ -37,5 +37,4 @@ function newController($scope, $location) {
 		$scope.fruits.push($scope.fruit);
 		$location.path('/');
 	}
-
 }
